@@ -1,0 +1,210 @@
+/* Typography */
+h1 {font-size: 3em;}
+h2 {font-size: 2.6em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.2em;}
+
+@add=mq-medium 
+	h1 {font-size: 2.5em;}
+	h2 {font-size: 2.2em;}
+	h3 {font-size: 1.8em;}
+	h4 {font-size: 1.5em;}
+	h5 {font-size: 1.4em;}
+	h6 {font-size: 1.2em;}
+@add=mq-end
+
+.regular__link {
+	text-decoration: none;
+}
+
+.typography__block {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.font {
+	&__block {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	&__gradient {
+		background: -webkit-linear-gradient(left,#d4145a 0,#e8664a 50%,#d4145a 100%);
+    background: -o-linear-gradient(right,#d4145a 0,#e8664a 50%,#d4145a 100%);
+    background: -moz-linear-gradient(right,#d4145a 0,#e8664a 50%,#d4145a 100%);
+    background: linear-gradient(to right,#d4145a 0,#e8664a 50%,#d4145a 100%);
+		-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	}
+	
+	&__uppercase {text-transform: uppercase;}
+	&__disabled {text-decoration: line-through;}
+	
+	&__light {font-weight: @light;}
+	&__normal {font-weight: @regular;}
+	&__semibold {font-weight: @semi;}
+	&__bold {font-weight: @bold;}
+	
+	&__large {font-size: 1.5em; line-height: 1.5em;}
+	&__medium {font-size: 1.3em; line-height: 1.5em;}
+	&__regular {font-size: 1.2em; line-height: 1.8em;}
+	&__small {font-size: 1.1em; line-height: 1.5em;}
+	&__smallest {font-size: 1em; line-height: 1.5em;}
+}
+
+.color {
+	&__white {color: @color-white;}
+	&__black {color: @color-black;}
+	&__gray {color: @color-gray;}
+	&__pink {color: @color-pink;}
+}
+
+.align {
+	&__right {text-align: right;}
+	&__left {text-align: left;}
+	&__center {text-align: center;}
+}
+
+.bg {
+	&__lightgray {background: @color-lightgray;}
+	&__white {background: @color-white;}
+	&__pink {background: @color-pink; color: @color-white;}
+}
+
+.padding__fix {padding-top: 160px;}
+
+/* Buttons */
+.btn {
+	padding: 18px 25px;
+	font-size: 1em;
+	font-weight: @regular;
+	border-radius: 30px;
+	border: 0px;
+	cursor: pointer;
+	-webkit-transition: @anim-fast;
+	-moz-transition: @anim-fast;
+	-ms-transition: @anim-fast;
+	-o-transition: @anim-fast;
+	transition: @anim-fast;
+	
+	&__gradient {
+		background: -webkit-linear-gradient(left,#d4145a 0,#e8664a 50%,#d4145a 100%);
+		background: -o-linear-gradient(right,#d4145a 0,#e8664a 50%,#d4145a 100%);
+		background: -moz-linear-gradient(right,#d4145a 0,#e8664a 50%,#d4145a 100%);
+		background: linear-gradient(to right,#d4145a 0,#e8664a 50%,#d4145a 100%); 
+		background-position: 0;
+		background-size: 200% 200%;
+		color: @color-white;
+		
+		&:hover {
+		background-position: 100% center;
+    background-size: 200% 200%;
+		}
+	}
+	
+	&__white_solid {
+		background: @color-white;
+		color: @color-pink;
+		border: 2px solid @color-white;
+		
+		&:hover {
+			background: @color-pink;
+			color: @color-white;
+		}
+	}
+	
+	&__white_solid_pink {
+		background: @color-white;
+		color: @color-pink;
+		border: 2px solid @color-pink;
+		
+		&:hover {
+			background: @color-pink;
+			color: @color-white;
+		}
+	}
+	
+	&__fullWidth {
+		width: auto;
+	}
+	
+	&__small_padding {
+		padding: 15px 28px;
+		font-size: 0.9em;
+	}
+	
+	&__float_right {
+		float: right;
+	}
+}
+
+
+/* Spacing */
+.spacing {
+	&__small {margin: 10px 0;}
+	&__medium {margin: 25px 0;}
+	&__large {margin: 50px 0;}
+	
+	&__small_top {margin-top: 10px;}
+	&__medium_top {margin-top: 25px;}
+	&__large_top {margin-top: 50px;}
+	
+	&__small_bot {margin-bottom: 10px;}
+	&__medium_bot {margin-bottom: 25px;}
+	&__large_bot {margin-bottom: 50px;}
+}
+
+.small__img {
+	max-width: 250px;
+}
+
+.success__message {
+	background: #4DC46F;
+	border-radius: 80px;
+	margin-bottom: 40px;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	color: @color-white;
+	text-align: center;
+	float: left;
+}
+
+/* Accordion */
+.accordion {
+	text-align: left;
+	width: 100%;
+	
+	&__number {
+		color: @color-pink;
+		margin-right: 0.5em;
+		font-weight: 500;
+		font-size: 1.1em;
+	}
+	
+	div {
+		width: 100%;
+		height: auto;
+		padding: 25px 0;
+		cursor: pointer;
+	}
+	
+	h5 {
+		border-bottom: 1px solid #ddd;
+		font-weight: 300;
+		padding: 25px 0;
+		font-size: 1.3em;
+		-webkit-transition: @anim-fast;
+		-moz-transition: @anim-fast;
+		-ms-transition: @anim-fast;
+		-o-transition: @anim-fast;
+		transition: @anim-fast;
+		cursor: pointer;
+	}
+	
+	h5:hover {color: @color-pink;}
+}

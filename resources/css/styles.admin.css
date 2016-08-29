@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+@import url(https://fonts.googleapis.com/css?family=Heebo:400,300,500,700);
+
+*, body, html {padding: 0px; margin: 0px; outline: none; box-sizing: border-box;}
+body {
+	font-size: 14px;
+	font-family: 'Heebo', sans-serif;
+}
+
+#wpcontent, #wpfooter {margin-left: 140px;}
+
+#wpcontent {
+	padding: 5px 40px;
+	padding-right: 20px;
+}
+
+#wpfooter {
+	padding: 10px 40px;
+	padding-right: 20px;
+}
+
+#wpcontent .title {
+	font-size: 2em;
+	padding: 0px;
+	margin: 0px;
+}
+
+.notice {
+	background: #fff;
+  border-left: 4px solid #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  margin: 15px 0px;
+  padding: 1px 12px;
+	width: 100%;
+	float: left;
+}
+
+.notice h1 {float: left; display: inline-block; width: auto; height: auto;}
+
+.sa-button {
+	float: right; 
+	padding: 11px 20px; 
+	padding-bottom: 9px;
+	display: inline-block; 
+	width: auto; 
+	height: auto; 
+	font-size: 0.9em;
+	border: 0px;
+	background: #536270;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 2px;
+	margin-top: 10px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-left: 10px;
+	border-bottom: 2px solid #2c333a;
+}
+
+/* Terminal */
+.terminal {
+	font-size: 13px; 
+	width: 100%; 
+	height: auto;
+	color: #000; 
+	margin: 0 auto; 
+	box-sizing: border-box;
+	float: left;
+}
+
+.terminal pre {
+	font-family: 'Cutive Mono';
+  width: 100%;
+  padding: 0.5em;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  line-height: 0;
+  counter-reset: line;
+	background: #fff;
+	height: auto;
+}
+
+.terminal span {
+	display: block;
+	line-height: 1.5rem;
+}
+
+.terminal span:before {
+	counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  width: 40px;
+	text-align: center;
+  margin-right: 20px;
+  color: #888
+}
+
+.terminal .error {
+	color: #ffffff;
+	background: #E65453;
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+
+.terminal .error:before {
+	color: #fff !important;
+	border-right: 1px solid #fff;
+}
+
+.terminal .error p {
+	padding: 20px;
+}
+
+.terminal .success {
+	color: #ffffff;
+	background: #2DCC70;
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+
+.terminal .success:before {
+	color: #fff !important;
+	border-right: 1px solid #fff;
+}
+
+.terminal .success p {
+	padding: 20px;
+}
+
+.terminal .output__message:last-child {margin-bottom: 0px;}
+
+.terminal .spacer {width: 100%; background: none; height: auto; display: block;}

@@ -1,0 +1,309 @@
+header {
+	padding: 0px 30px;
+	background: #fff;
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	max-height: 90px;
+	-webkit-transition: @anim-fast;
+	-moz-transition: @anim-fast;
+	-ms-transition: @anim-fast;
+	-o-transition: @anim-fast;
+	transition: @anim-fast;
+	border-bottom: 2px solid #E9E9E9;
+	
+		.&__wrapper {
+			width: 100%;
+			-webkit-transition: @anim-fast;
+			-moz-transition: @anim-fast;
+			-ms-transition: @anim-fast;
+			-o-transition: @anim-fast;
+			transition: @anim-fast;
+			height: 90px;
+		}
+		
+		.&__brand {
+			width: 50px;
+			height: 50px;
+			float: left;
+			margin-top: 20px;
+			background: url(../../images/brand/logo.png) center center;
+			background-size: cover;
+			-webkit-transition: @anim-fast;
+			-moz-transition: @anim-fast;
+			-ms-transition: @anim-fast;
+			-o-transition: @anim-fast;
+			transition: @anim-fast;
+			position: relative;
+			z-index: 200;
+		}
+		
+		.&__quote {
+			float: right;
+			height: auto;
+			width: auto;
+			line-height: 90px;
+			
+			span {
+				font-size: 1em;
+			}
+			
+			&_btn {
+				width: auto;
+				height: auto;
+				padding: 13px 18px;
+				color: @color-pink;
+				background: none;
+				border: 1px solid @color-pink;
+				border-radius: 40px;
+				font-size: 0.80em;
+				font-weight: @regular;
+				-webkit-transition: @anim-fast;
+				-moz-transition: @anim-fast;
+				-ms-transition: @anim-fast;
+				-o-transition: @anim-fast;
+				transition: @anim-fast;
+				font-weight: @semi;
+				
+				&:hover {
+					cursor: pointer;
+					background: @color-pink;
+					color: @color-white;
+				}
+	
+			}
+			
+		}
+		
+		.menu-icon {
+			span, span:before, span:after {
+				background-color: @color-black;
+			}
+		}
+	
+		.icon__open {
+			span {background-color: rgba(0,0,0,0.0) !important;}
+		}
+		
+		img {width: 50px;}
+}
+
+.main__navigation {
+	list-style: none;
+	width: auto;
+	height: auto;
+	float: left;
+	line-height: 90px;
+	margin-left: 2em;
+		
+		li {
+			list-style: none;
+			display: inline-block;
+			width: auto;
+			height: auto;
+			margin-right: 2em;
+				
+				a {
+					color: @color-black;
+					text-decoration: none;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-ms-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+					cursor: pointer !important;
+					font-size: 1em;
+					font-weight: @semi;
+				}
+				
+				a:hover {
+					color: @color-pink;
+				}
+				
+		}
+		
+		.current_page_item a {
+			color: @color-pink;
+			font-weight: @bold;
+		}
+		
+		li:last-child {
+			margin-right: 0;
+		}
+}
+
+.transparent {
+	background: none;
+	max-height: 90px;
+	border: 0px;
+	
+	.header__wrapper {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	
+	.header__brand {
+		background: url(../../images/brand/logo-transparent.png) center center;
+		background-size: cover;
+	}
+	
+	.header__quote_btn {
+		border-color: @color-white;
+		color: @color-white;
+		margin-right: 0;
+		
+		&:hover {
+			background: @color-white;
+			color: @color-black;
+		}
+	}
+	
+	.main__navigation {
+		ul li a {
+			color: @color-white;
+			
+			&:hover {
+				color: @color-white;
+			}
+		}
+		
+		.current_page_item a {
+			color: @color-white;
+			font-weight: @bold;
+		}
+	}
+	
+	.menu-icon {
+		span, span:before, span:after {
+			background-color: @color-white;
+		}
+	}
+	
+	.icon__open {
+		span {background-color: rgba(0,0,0,0.0) !important;}
+	}
+}
+
+.scroll__trigger {
+	background: #fff;
+	border-bottom: 2px solid #E9E9E9;
+	max-height: 90px;
+	
+	.header__wrapper {
+		border-bottom: 0px;
+	}
+	
+	.header__brand {
+		background: url(../../images/brand/logo.png) center center;
+		background-size: cover;
+	}
+	
+	.header__quote_btn {
+		border-color: @color-pink;
+		color: @color-pink;
+		
+		&:hover {
+			background: @color-pink;
+			color: @color-white;
+		}
+	}
+	
+	.main__navigation {
+		ul li a {
+			color: #000;
+			
+			&:hover {
+				color: @color-pink;
+			}
+		}
+		.current_page_item a {
+			color: @color-pink;
+			font-weight: @bold;
+		}
+	}
+	
+	.menu-icon {
+		span, span:before, span:after {
+			background-color: @color-black;
+		}
+	}
+	
+	.icon__open {
+		span {background-color: rgba(0,0,0,0.0) !important;}
+	}
+}
+
+.open__logo {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+	background: url(../../images/brand/logo-transparent.png) center center !important;
+	background-size: cover !important;
+	-webkit-transition: @anim-fast;
+	-moz-transition: @anim-fast;
+	-ms-transition: @anim-fast;
+	-o-transition: @anim-fast;
+	transition: @anim-fast;
+	position: relative;
+	z-index: 200;
+}
+
+.js-trigger {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	background: @color-black;
+	top: 0; left: 0;
+	z-index: 100;
+	display: none;
+	
+	&_container {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		
+			ul li a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 1.4em;
+				margin-bottom: 1em;
+				display: block;
+			}
+			
+			.header__quote_btn {
+				color: @color-white;
+				border-color: @color-white;
+				
+				&:hover {
+					background: none !important;
+				}
+			}
+	}
+}
+
+.js-trigger-reveal {
+	display: table;
+}
+
+.header__open {
+		border-bottom: 1px solid rgba(255, 255, 255, 0) !important;
+}
+
+.header__open_prevent {
+	background: #000 !important;
+	border-color: #000 !important;
+		
+	.menu-icon {
+		span, span:before, span:after {
+			background-color: @color-white;
+		}
+	}
+		
+	.icon__open {
+		span {background-color: rgba(0,0,0,0.0) !important;}
+	}
+}
+
+.add__margin_btn {
+	margin-right: 10px;
+}

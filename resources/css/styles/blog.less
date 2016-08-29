@@ -1,0 +1,122 @@
+.blog__post {
+	padding: 30px;
+	text-align: left;
+	
+	h3 {
+		color: @color-black;
+		-webkit-transition: @anim-fast;
+		-moz-transition: @anim-fast;
+		-ms-transition: @anim-fast;
+		-o-transition: @anim-fast;
+		transition: @anim-fast;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	&_container {
+		background: #fff;
+		border-right: 2px solid #E9E9E9;
+		border-bottom: 2px solid #E9E9E9;
+	}
+	
+	&_info {
+		padding: 30px;
+	}
+	
+	&_comments {
+		float: right;
+	}
+	
+	&_comments .lnr {
+		margin-right: 5px;
+	}
+	
+	a {color: @color-gray !important; text-decoration: none;}
+	
+	
+	/* Hover Blog Post */
+	&:hover {
+		h3 {color: @color-pink;}
+	}
+}
+
+.blog__holder {padding: 40px; padding-top: 80px; height: auto; width: auto;}
+
+.blog__block {
+	background: #fff;
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+	padding: 0;
+	
+	
+	&_nav {
+		margin-top: 40px;
+	}
+	
+	&_hero {
+		width: 100%;
+		height: 350px;
+		background-size: cover !important;
+	}
+	
+	&_social {
+		float: right; 
+
+		a {text-decoration: none;}
+		
+		span {margin-right: 1em;}
+		
+		i {
+			display: inline-block;
+			margin: 0 5px;
+		}
+		
+		.fa-facebook {color: #3B5998;}
+		.fa-google-plus {color: #D4145A;}
+		.fa-twitter {color: #00ACED;}
+	}
+	
+	&_content {
+		padding: 40px;
+		
+		strong {font-weight: 600;}
+		
+		p {margin-bottom: 20px;}
+		
+		ul {
+			margin: 20px 0px; 
+			margin-left: 20px;
+			
+			li {
+				margin-bottom: 20px;
+			}
+		}
+		
+	}
+}
+
+@add=mq-medium
+.blog__holder {
+	padding: 0;
+	padding-top: 40px !important;
+}
+
+@add=mq-end 
+
+.blog__related {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 20px;
+	height: 50px;
+	
+	a {color: #000; text-decoration: none;}
+	
+	&_img {width: 50px; height: 50px; display: block; float: left;}
+	
+	&_text {float: left; width: auto; height: auto; margin-left: 1em; line-height: 20px; padding-top: 2px;}
+	&_date {font-size: 0.9em;}
+	
+	img {width: 50px; height: 50px; border-radius: 25px;}
+}
